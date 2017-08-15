@@ -1,0 +1,45 @@
+<div id="frontpage">
+  <section class="header">
+    <nav class="header__navbar">
+      <ul class="header__list">
+        <li  *ngFor="let item of items"><a  routerLink="{{item.link}}">{{item.title}}</a></li>
+      </ul>
+    </nav>
+    <span class="header__logo">
+      <h4 class="header__logo--style"><i class="fa fa-bicycle" aria-hidden="true"></i> ROAD . TRAVEL</h4>
+    </span>
+  </section>
+  <section class="wrapper">
+    <div class="content">
+      <router-outlet></router-outlet>
+      <!-- reserved for content elements -->
+    </div>
+  </section>
+  <section class="footer">
+    <footer class="footer__block footer--align">
+      <!-- reserved for footer elements -->
+      <div class="footer__logo  footer__block--size">
+        <img src="../../../../assets/img/ROADHOSTEL.png" class="footer__logoimg" />
+      </div>
+      <div class="footer__description footer__block--size">
+        <h4 class="footer__block--title"><b>Sobre Nós</b></h4>
+        <p class="footer__description--label">
+          Road Travel é uma plataforma que divulga eventos culturais,
+          que acontece em lugares onde muito nunca iam imaginar.
+          Seja em festas, encontros ou feiras livres divulgados
+          tudo aquilo que você quer saber mas não sabe onde procurar.
+        </p>
+          <!-- <span class="footer__description--highlight footer__block--size">" Não somos uma plataforma mainstream ou cult , somos apenas democráticos ."</span> -->
+
+      </div>
+      <div class="footer__social  footer__block--size">
+        <ul class="social__list">
+          <li class="social__network social__network--twiiter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li class="social__network social__network--facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class="social__network social__network--gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+        <button [routerLink]="['/contact']" class="btn__contact">Contate Nos</button>
+      </div>
+    </footer>
+  </section>
+</div>

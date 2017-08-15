@@ -1,0 +1,19 @@
+{
+	"items": [{
+			"title": "Home",
+			"link": ""
+		},
+		{
+			"title": "Eventos",
+			"link": "/events"
+		},
+		{
+			"title": "Seja Parceiro",
+			"link": "/becameapartner"
+		},
+		{
+			"title": "Contato",
+			"link": "/contact"
+		}
+	]
+}

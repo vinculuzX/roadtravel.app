@@ -1,0 +1,56 @@
+.events__card{
+  width: 350px;
+  height:450px;
+  border: 1px solid  rgba(0,0,0,.125);
+  background-color:#FAFAFA;
+  margin: 24px 12px;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  .card__header{
+    width: 350px;
+    height: 280px;
+    .card__img{
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  .card__content{
+    .card__content--title{
+      text-align: center;
+      font-weight: lighter;
+      font-style: oblique;
+    }
+    .card__date{
+      width:65px;
+      height: 75px;
+      background-color:#571A3D;
+      font-size: 8px;
+      margin: 9px 12px;
+      color:$white;
+      float: left;
+      text-transform: uppercase;
+      text-align: center;
+      vertical-align: middle;
+      display: block;
+      .card__date--day{
+        color:#FFCA28;
+        font-size:30px;
+        line-height: 42px;
+        padding:6px 0;
+      }
+
+      >span , .card__date--mmyyyy{
+        // margin:0 25%;
+        width:65px;
+      }
+    }
+    .card__info{
+      float: right;
+      margin: 16px 9px;
+      width: 225px;
+      text-align:justify;
+    }
+  }
+}

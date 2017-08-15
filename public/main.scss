@@ -1,0 +1,42 @@
+//font-awesome
+// $fa-font-path: "~font-awesome/fonts";
+// @import '~font-awesome/scss/font-awesome.scss';
+//theme scss
+@import './theme/_button.scss';
+@import './theme/_font.scss';
+@import './theme/_variable.scss';
+@import './theme/_responsive.scss';
+@import "./theme/standard.scss";
+@import './theme/_card.scss';
+//front scss
+@import './app/pages/front/front.component.scss';
+@import './app/pages/front/home.page/homepage.component.scss';
+@import './app/pages/front/event.page/eventpage.component.scss';
+@import './app/pages/front/events.page/eventspage.component.scss';
+@import './app/pages/front/partnership.page/partnershippage.component.scss';
+@import './app/pages/front/contact.page/contactpage.component.scss';
+//admin scss
+@import './app/pages/admin/admin.component.scss';
+
+body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  background-color: $bgcolor;
+}
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+  color: $black;
+  &:hover{
+    color: none;
+  }
+}
+
+h1,h2,h3,h4,h5{
+  margin:12px 0px;
+}

@@ -1,0 +1,27 @@
+<div id="eventpage">
+  <div class="event__header">
+    <img [src]="event?.photo_url" class="event__image" />
+  </div>
+  <div class="event__info">
+    <span><i aria-hidden="true" class="fa fa-calendar"></i> {{event?.start_date | date:"dd" }} de {{event?.start_date | date:"MMM" }} à {{event?.end_date | date:"dd" }} de {{event?.end_date | date:"MMM" }} </span><br />
+    <span *ngIf="event?.address"><i aria-hidden="true" class="fa fa-map-marker"></i> {{event?.address}}</span><br />
+    <span><i aria-hidden="true" class="fa fa-clock-o"></i> {{event?.start_time}} à {{event?.end_time}} </span><br />
+  </div>
+  <div class="event__content">
+    <div class="event__description">
+      <h3 class="event__description--title">{{event?.title}}</h3><br /><br /><br />
+      <p  [innerHTML]="event?.description">
+
+      </p>
+    <span class="event__address">
+      <h4 class="event__address--title">Endereço</h4>
+      <p>
+        {{event?.place}}<br />
+        {{event?.address}}<br />
+        {{event?.city}} - {{event?.state}} <br />
+      </p>
+    </span>
+    </div>
+  </div>
+
+</div>

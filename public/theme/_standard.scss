@@ -1,0 +1,27 @@
+// standard
+body{
+  font: 16px/24px 'OpenSans';
+  @include responsive(mobile){
+    font:12px/20px 'OpenSans';
+  }
+}
+footer{
+  font:20px/28px 'OpenSans';
+  @include responsive(mobile){
+      font:12px/20px 'OpenSans';
+    }
+}
+
+.headline{
+    font:66px/72px 'Lato';
+    @include responsive(mobile){
+      font:26px/30px 'Lato'
+    }
+}
+.container{
+  margin:0 auto;
+  padding:0;
+}
+.no-border{
+  border: none !important;
+}

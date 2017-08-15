@@ -1,0 +1,44 @@
+#eventpage{
+  @extend .container;
+  width: 1140px;
+  padding:48px 0 ;
+  .event__header{
+    width:1140px;
+    padding:6px 0;
+    .event__image{
+      width: 900px;
+      height: 350px;
+      object-fit: cover;
+      margin: 0 auto;
+      padding: 0px 90px;
+    }
+  }
+  .event__info{
+    position: relative;
+    top: -5.3em;
+    background-color: #4A148C;
+    color: #F3F4E5;
+    font-size: 14px;
+    font-weight: 600;
+    width:280px;
+    padding:8px 12px;
+    box-shadow: 0 10px 6px -6px #777;
+    >span{
+      padding:9px 12px;
+    }
+  }
+  .event__content{
+    height: auto;
+    .event__description{
+      text-align: justify;
+      .event__description--title{
+        text-align: center;
+        width: 175px;
+        padding:8px 24px;
+        margin:0 auto;
+        border-bottom:1px solid $zombie-blue;
+        font-weight: 600;
+      }
+    }
+  }
+}
