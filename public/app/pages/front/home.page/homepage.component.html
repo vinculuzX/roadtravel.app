@@ -11,7 +11,7 @@
     <div class="events__hightlight">
       <h1 class="events__hightlight--title">Principais Eventos</h1>
       <div class="events__card" *ngFor="let event of events">
-        <a routerLink="events/{{event?.title}}">
+        <a routerLink="events/{{event?._id['$oid']}}">
           <div class="card__header">
             <img [src]="event?.photo_url"  class="card__img"/>
           </div>
