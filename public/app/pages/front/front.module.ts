@@ -13,6 +13,8 @@ import {EventsPageComponent} from './events.page/eventspage.component'
 import {PartnershipPageComponent} from './partnership.page/partnershippage.component'
 import {ContactPageComponent} from './contact.page/contactpage.component'
 
+import {SortPipe} from '../../pipes/sort.pipe'
+
 import {FrontRouting} from './front.routing'
 
 @NgModule({
@@ -27,7 +29,8 @@ import {FrontRouting} from './front.routing'
     EventPageComponent,
     EventsPageComponent,
     PartnershipPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    SortPipe
   ],
   schemas:[
     CUSTOM_ELEMENTS_SCHEMA

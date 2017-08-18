@@ -1,5 +1,5 @@
 <div id="eventspage">
-    <div class="events__card" *ngFor="let event of events">
+    <div class="events__card" *ngFor="let event of events | sortBy:'start_date'">
       <a (click)="openEvent(event?._id['$oid'])">
         <div class="card__header">
           <img [src]="event.photo_url"  class="card__img"/>

@@ -4,20 +4,21 @@ import {DataSourceService} from '../../../providers/datasource.service'
 
 @Component({
   templateUrl: 'homepage.component.html',
+
 })
 export class HomePageComponent implements OnInit {
   private events:any;
   constructor(private _datasource:DataSourceService) {  }
   ngOnInit() {
-    this.getDataEvents().subscribe((event)=>{
+    this.getDataEventsPublished().subscribe((event)=>{
       this.events = event
-      console.log(event)
     })
   }
-
-  private getDataEvents(){
+  private getDataEventsPublished(){
     return this._datasource.getAll()
-          .map(array => array.sort())  
+          .mergeMap(s => s)
+          .filter (s => s['status'] === 'published')
+          .map(s=>s).toArray()
   }
 
 }
