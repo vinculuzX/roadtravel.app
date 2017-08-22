@@ -1,22 +1,47 @@
 <div id="eventspage">
-    <div class="events__card" *ngFor="let event of events | sortBy:'start_date'">
-      <a (click)="openEvent(event?._id['$oid'])">
-        <div class="card__header">
-          <img [src]="event.photo_url"  class="card__img"/>
-        </div>
-        <div class="card__content">
-          <h4 class="card__content--title">{{event.title}}</h4>
-          <div class="card__date">
-            <span class="card__date--day">{{event?.start_date | date:"dd"}}</span>
-            <br />
-            <span class="card__date--mmyyyy">{{event?.start_date | date:"MMM"}} {{event?.start_date | date:"y"}}</span>
+    <div class="events__block">
+      <h1 class="events__block--title">Proximos Eventos</h1>
+      <div class="events__card" *ngFor="let event of events | sortBy:'start_date'">
+        <a (click)="openEvent(event?._id['$oid'])">
+          <div class="card__header">
+            <img [src]="event.photo_url"  class="card__img"/>
           </div>
-          <div class="card__info">
-            <span class="card__info--place">{{event?.place}}</span>
-            <br />
-            <span class="card__date--cep">{{event?.city}} - {{event?.state}}</span>
+          <div class="card__content">
+            <h4 class="card__content--title">{{event.title}}</h4>
+            <div class="card__date">
+              <span class="card__date--day">{{event?.start_date | date:"dd"}}</span>
+              <br />
+              <span class="card__date--mmyyyy">{{event?.start_date | date:"MMM"}} {{event?.start_date | date:"y"}}</span>
+            </div>
+            <div class="card__info">
+              <span class="card__info--place">{{event?.place}}</span>
+              <br />
+              <span class="card__date--cep">{{event?.city}} - {{event?.state}}</span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
+    </div>
+    <div class="events__block">
+      <h1 class="events__block--title">Eventos Encerrados</h1>
+      <div class="events__card" *ngFor="let event of events_close | sortBy:'start_date'">
+        <a (click)="openEvent(event?._id['$oid'])">
+          <div class="card__header">
+            <img [src]="event.photo_url"  class="card__img"/>
+          </div>
+          <div class="card__content">
+            <h4 class="card__content--title">{{event.title}}</h4>
+            <div class="card__date">
+              <span class="card__date--day">{{event?.start_date | date:"dd"}}</span>
+              <br />
+              <span class="card__date--mmyyyy">{{event?.start_date | date:"MMM"}} {{event?.start_date | date:"y"}}</span>
+            </div>
+            <div class="card__info">
+              <br />
+              <span class="card__info--closed">Encerrado</span>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
 </div>

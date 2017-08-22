@@ -1,4 +1,23 @@
 #eventspage{
   @extend .container;
   width:1140px;
+  .events__block{
+    width: 100%;
+    padding:48px 0px;
+    .events__block--title{
+      text-align: center;
+      font-weight: bolder;
+      font-size: 24px;
+      line-height: 16px;
+
+    }
+  }
+  .card__info--closed{
+    padding: 8px 12px;
+    font-weight: lighter;
+    font-size: 18px;
+    color:#E21519;
+    text-transform:uppercase;
+    text-align: center;
+  }
 }
