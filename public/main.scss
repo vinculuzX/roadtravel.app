@@ -8,6 +8,8 @@
 @import './theme/_responsive.scss';
 @import "./theme/standard.scss";
 @import './theme/_card.scss';
+@import './theme/_normalize.scss';
+@import './theme/_grid.scss';
 //front scss
 @import './app/pages/front/front.component.scss';
 @import './app/pages/front/home.page/homepage.component.scss';
@@ -17,6 +19,8 @@
 @import './app/pages/front/contact.page/contactpage.component.scss';
 //admin scss
 @import './app/pages/admin/admin.component.scss';
+
+
 
 body{
   margin:0;
