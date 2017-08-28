@@ -15,6 +15,8 @@ import {ContactPageComponent} from './contact.page/contactpage.component'
 
 import {SortPipe} from '../../pipes/sort.pipe'
 
+import {StickyHeaderDirective} from '../../shared/sticky/sticky.directive'
+
 import {FrontRouting} from './front.routing'
 
 @NgModule({
@@ -30,7 +32,8 @@ import {FrontRouting} from './front.routing'
     EventsPageComponent,
     PartnershipPageComponent,
     ContactPageComponent,
-    SortPipe
+    SortPipe,
+    StickyHeaderDirective
   ],
   schemas:[
     CUSTOM_ELEMENTS_SCHEMA

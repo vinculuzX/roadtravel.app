@@ -1,5 +1,5 @@
 <div id="frontpage">
-  <section class="header">
+  <section class="header" sticky [stickyMin]="90" [stickyClass]>
     <nav class="header__navbar">
       <ul class="header__list">
         <li  *ngFor="let item of items"><a  routerLink="{{item.link}}">{{item.title}}</a></li>
@@ -16,7 +16,8 @@
     </div>
   </section>
   <section class="footer">
-    <footer class="footer__block footer--align">
+    <footer class="footer__block footer--align container">
+    <div class="row">
       <!-- reserved for footer elements -->
       <div class="footer__logo  footer__block--size">
         <img src="../../../../assets/img/ROADHOSTEL.png" class="footer__logoimg" />
@@ -39,6 +40,7 @@
         </ul>
         <button [routerLink]="['/contact']" class="btn__contact">Contate Nos</button>
       </div>
+    </div>
     </footer>
   </section>
 </div>

@@ -4,7 +4,6 @@ import {DataSourceService} from '../../../providers/datasource.service'
 
 @Component({
   templateUrl: 'homepage.component.html',
-
 })
 export class HomePageComponent implements OnInit {
   private events:any;
@@ -16,8 +15,9 @@ export class HomePageComponent implements OnInit {
   }
   private getDataEventsPublished(){
     return this._datasource.getAll()
-          .mergeMap(s => s)
+          .flatMap(s => s)
           .filter (s => s['status'] === 'published')
+          .take(3)
           .map(s=>s).toArray()
   }
 

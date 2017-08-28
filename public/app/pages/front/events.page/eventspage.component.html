@@ -2,7 +2,7 @@
     <div class="events__block">
       <h1 class="events__block--title">Proximos Eventos</h1>
       <div class="events__card" *ngFor="let event of events | sortBy:'start_date'">
-        <a (click)="openEvent(event?._id['$oid'])">
+        <a [routerLink]="['/event' , event._id['$oid']]" [queryParams]="{title:event.title}">
           <div class="card__header">
             <img [src]="event.photo_url"  class="card__img"/>
           </div>
