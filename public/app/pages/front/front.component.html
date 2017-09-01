@@ -1,12 +1,16 @@
 <div id="frontpage">
   <section class="header" sticky [stickyMin]="90" [stickyClass]>
-    <nav class="header__navbar">
+    <nav class="header__navbar five offset-by-seven columns">
       <ul class="header__list">
-        <li  *ngFor="let item of items"><a  routerLink="{{item.link}}">{{item.title}}</a></li>
+        <li  *ngFor="let nav of nav "><a  routerLink="{{nav?.link}}">{{nav?.title}}</a></li>
       </ul>
     </nav>
-    <span class="header__logo">
-      <h4 class="header__logo--style"><i class="fa fa-bicycle" aria-hidden="true"></i> ROAD . TRAVEL</h4>
+    <span class="header__logo four offset-by-two columns ">
+      <div class="header__logo--title">
+        <a  class="" routerLink='/'>
+          <i class="fa fa-bicycle"></i>Road . Travel
+        </a>
+      </div>
     </span>
   </section>
   <section class="wrapper">
