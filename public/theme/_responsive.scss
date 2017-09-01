@@ -1,10 +1,22 @@
 @mixin responsive($media) {
   @if ($media == 'mobile') {
-    @media only screen and (max-width:1024px){
+    @media only screen and (max-width:400px){
       @content;
     }
-  }@else if ($media == 'desktop'){
-    @media only screen and (min-width:1024px){
+  }@else if ($media == 'phablet'){
+    @media only screen and (max-width:550px){
+      @content;
+    }
+  }@else if($media == 'tablet'){
+    @media only screen and (max-width: 750px){
+      @content;
+    }
+  }@else if($media == 'desktop'){
+    @media only screen and (max-width: 1000px){
+      @content;
+    }
+  }@else if($media == 'desktop-hd'){
+    @media only screen and (min-width: 1200px){
       @content
     }
   }
