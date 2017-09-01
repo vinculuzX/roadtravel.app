@@ -1,21 +1,21 @@
 // standard
 body{
-  font: 16px/24px 'OpenSans';
+  font: 18px/24px 'Open Sans', sans-serif;;
   @include responsive(mobile){
-    font:12px/20px 'OpenSans';
+    font:12px/20px 'Open Sans', sans-serif;;
   }
 }
 footer{
-  font:20px/28px 'OpenSans';
+  font:20px/28px 'Roboto Condensed', sans-serif;
   @include responsive(mobile){
-      font:12px/20px 'OpenSans';
+      font:12px/20px 'Roboto Condensed', sans-serif;
     }
 }
 
 .headline{
-    font:66px/72px 'Lato';
+    font:64px/72px 'Lato', sans-serif;;
     @include responsive(mobile){
-      font:26px/30px 'Lato'
+      font:26px/30px 'Lato', sans-serif;
     }
 }
 .no-border{
