@@ -8,15 +8,8 @@
     .banner__img{
       width: 100%;
       min-height: 800px;
-      background: -moz-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%),url('../../../../assets/img/banner__img.jpg') center;
-      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 62, 28, 0.5)), color-stop(100%, rgba(255, 140, 0, 0.5))),url('../../../../assets/img/banner__img.jpg') center;
-      background: -webkit-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%),url('../../../../assets/img/banner__img.jpg') center;
-      background: -o-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%),url('../../../../assets/img/banner__img.jpg') center;
-      background: -ms-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%),url('../../../../assets/img/banner__img.jpg') center;
-      background: linear-gradient(to right, rgba(255, 62, 28, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%),url('../../../../assets/img/banner__img.jpg') center;
-      background-size: cover;
-      opacity: 0.6
-
+      background-color: #571A3D;
+      opacity: 0.8;
     }
     .banner__headline{
       position: absolute;
@@ -27,9 +20,11 @@
     .banner__headline--title{
       @extend .headline;
       font-weight: 900;
+      color:$white
     }
     .banner__headline--subtitle{
       font-weight: lighter;
+      color:#f0f0f0;
     }
     }
   }

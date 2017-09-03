@@ -75,7 +75,8 @@
   //wrapper
   .wrapper{
     position: relative;
-    min-height: 600px;
+    min-height: 650px;
+
     .content{
       width: 100%;
       height: auto;
@@ -89,21 +90,6 @@
     height: auto;
     .footer__block{
       padding: 24px 0;
-      .footer__block--size{
-        max-width:425px;
-        padding:0 20px;
-        display: inline-block;
-        vertical-align: middle;
-      }
-      .footer__block--title{
-        margin: 0 3px;
-        font-weight: bolder;
-      }
-      .footer__logo{
-        .footer__logoimg{
-          padding:20px 0
-        }
-      }
       .footer__description{
         color:$white;
         .footer__description--label{
@@ -113,18 +99,12 @@
           color:$white;
           text-align: justify;
         }
-        //  .footer__description--highlight{
-        //    font: 16px/22px 'Sriracha';
-        //    font-style: italic;
-        //    letter-spacing: 0.1em;
-        //    padding:6px 0;
-        //  }
       }
       .footer__social{
         .social__list{
           .social__network{
             display: inline-block;
-            padding: 24px 12px;
+            padding: 0px 12px;
             text-align: center;
             margin:0 auto;
             font-size: 32px;
@@ -150,16 +130,6 @@
               color: #ef1a1a;
             }
           }
-        }
-        .btn__contact{
-          background-color: #d84b6b;
-          border-radius: 20px;
-          border: none;
-          width: 150px;
-          display: block;
-          margin: 0 auto;
-          color:$white;
-          padding:12px;
         }
       }
     }
